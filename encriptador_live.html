@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador de textos-Oralce ONE</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div>
+            <img class="logo" src="img/logo.svg" alt="">
+        </div>
+    </header>
+    <div class="title">
+        <h1>Encriptador de menasaje</h1>
+    </div>
+    <main>
+        <section class="sectionEncr">
+            <textarea class="input-text" name="s-encriptar" id="" cols="40" rows="6" placeholder="Ingrese Aquí su mensaje para ser encriptado">
+            </textarea>  
+        </section>
+        <section class="botton">
+            <p>*Solo se permiten letras minuscúlas, sin acentos</p>
+            <!-- sección de los botones -->
+            <div>
+                <div class="botton-div">
+                    <button id="bottonEncript" class="bottonEncript" onclick="btnEncriptar()">Encriptar</button>
+                </div>
+                <div class="botton-div">
+                    <button id="bottonUnsc" class="bottonUnsc" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <!-- sección del encriptador -->
+        <section class="sectionUns">
+            <textarea class="output-text" name="encriptado" id="" cols="40" rows="6">
+            </textarea>
+    
+        </section>
+    </main>
+    <footer>
+        <p>Realizado por Juan Camilo Duque - Oracle Next Education 2023</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
